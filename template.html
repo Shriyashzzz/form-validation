@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src = "index.js" defer></script>
+    <script src = "countryList.js" defer></script>
+</head>
+<body>
+    <main>
+        <button type = "button" id = "openModal"class ="openDialog">Sign In</button>
+        
+            <dialog id = "userSignInDialog" open >
+                <form class = "userSignInForm"action="" method="post" novalidate>     
+                        <label for="country-select">Country *</label>
+                        <select  id="country-select" name="country-select" class="form-control bfh-countries" data-country="US" data-flags="true" >
+                            <option value="default" selected="selected">Select one option </option>
+                        </select>
+                        <label for="postalId">Zip Code </label>
+                        <input type="text" name = "zipcode" required  id = "postalId" minlength="5">
+                        <p class = "userHelp zipHelp"></p>
+                        <label for="emailUser">Email *</label>
+                        <input type="email" id = "emailUser" minlength = "8">
+                        <p class = "userHelp emailhelp"></p>
+                        <label for="passwordUser" >Password *</label>
+                        <input type="password" id = "passwordUser">
+                        <p class = "userHelp passwordHelp"></p>
+                        <section class = "buttonBox">
+                            <button type = "submit" class ="formSubmitBTn">Submit</button>
+                            <button type  = "button" id = "closeModal">Close</button>
+                        </section>
+
+                </form>
+            </dialog>
+            
+        
+            
+    </main>
+    
+</body>
+</html>

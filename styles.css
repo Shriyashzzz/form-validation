@@ -1,0 +1,103 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    height: 100dvh;
+    font-family: monospace;
+
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+
+
+#userSignInDialog{
+    border: 1px dotted brown;
+    height: 20rem;
+    width:18rem;
+    position: fixed;
+    
+
+    .userSignInForm{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        #country-select{
+            width: 53%;
+        }
+
+        input{
+            width:50%
+        }
+
+        
+        #country-select{
+            margin-bottom: 1rem;
+        }
+        .buttonBox{
+            display: flex;
+            gap:1rem;
+        }
+       
+    }
+}
+
+.openDialog{
+    height: fit-content;
+    width: fit-content;
+    
+
+}
+
+
+.formSubmitBTn, .openDialog , #closeModal{
+
+    border:none;
+    width:50%;
+    height: 1.5rem;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.openDialog, #closeModal{
+    width: fit-content;
+}
+
+
+
+
+.errorPara{
+    color: maroon;
+}
+
+
+.userHelp{
+    margin-top:2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+
+.invalid{
+    border:  2px solid red;
+}
+
+.valid{
+    border: 2px solid green;
+}
+
